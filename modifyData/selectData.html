@@ -1,0 +1,43 @@
+<!DOCTYPe html>
+<html lang="en">
+    <head>
+        <meta chraset="utf-8">
+        <title>Select Data</title>
+        <style>
+            body{
+                background-color: antiquewhite;
+            }
+            #form{
+                background-color:floralwhite;
+                width:500px;
+                margin:auto;
+                border: 2px solid black;
+            }
+            #content{
+                padding:40px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 style="text-align: center;">Welcome to the form!!</h1>
+        <div id="form">
+            <form method="post" action="displayData.php">
+                <div id="content">
+                    Select column/s to display:<br><br>
+                    <input type="checkbox" name="ipAddress">IP Address<br>
+                    <input type="checkbox" name="firstName">First Name<br>
+                    <input type="checkbox" name="lastName">
+                    Last Name<br>
+                    <input type="checkbox" name="ssnumber"/>Social Security Number<br>
+                    <input type="checkbox" name="ccnumber"/>Credit Card Number<br>
+                    <input type="checkbox" name="bankPassword">Pincode to bank account<br>
+                    <input type="checkbox" name="lambos"/>Lambos<br>
+                    <input type="checkbox" name="relStatus">Relationship Status<br>
+                    <br><br>
+                    <input type="submit" value="Done!">
+                    <input type="reset">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

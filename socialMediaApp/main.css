@@ -1,0 +1,74 @@
+body{
+    margin:0px;
+    padding:0px;
+    background-color:cornflowerblue;
+}        
+header{
+    margin:auto;
+    width:700px;
+}
+#feed-container, #profile-container{
+    background-color:white;
+    margin:auto;
+    width:700px;
+    padding:20px;
+}
+#postOrDelete{
+    width:500px;
+    margin:auto;
+    border:1px solid black;
+    margin-bottom:30px;
+}
+#sign-up, #sign-in{
+    padding: 30px;
+    background-color:white;
+    border:1px solid black;
+    margin:auto;
+    max-width:400px;
+}
+a{
+    text-decoration: none;
+}
+a:visited{
+    color:blue;
+}
+#left, #right{
+    display:inline;
+    width:50%;
+    height:100vh;
+}
+#right{
+    float:right;
+    background-color:cornflowerblue;
+}
+#left{
+    float:left;
+    background-color:white;
+}
+#logo{
+    margin:auto;
+    margin-top:25%;
+    width:50%;
+}       
+#sign-up{
+    margin-top:30%;
+}
+.error{
+    color:red;
+    font-size: 12px;
+}
+a{
+    text-decoration: none;
+}
+a:visited{
+    color:blue;
+}
+#username, #time{
+    border:2px solid black;
+}
+#post{      
+    border:2px solid black;
+    margin:auto;            
+    width:300px;    
+    margin-bottom:20px;        
+}

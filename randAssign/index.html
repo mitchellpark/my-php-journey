@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<!--Mitchell Park
+    Basics-A4
+    Period 4-->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Park Asset Management</title>
+        <style>
+            body{
+                background-color:brown;
+            }
+            header{
+                font-family: Georgia, sans-serif;
+                color:black;
+                text-align: center; 
+                font-size:25px;
+            }
+            article{
+                font-family:"Times New Roman", Times, serif;
+                margin-left:35px;
+                margin-right:35px;
+            }
+            footer{
+                margin-left: 200px;
+                font-family:Helvetica, Times, serif;
+                font-size:12px;
+            }
+            div#intro{
+                background-color:beige;
+                border:3px solid black;
+                padding:25px;
+                border-radius: 15px;
+                margin-left:80px;
+                margin-right:80px;
+            }
+            p#caption1{
+                margin:0px;
+                text-align: center;
+            }
+            img{
+                display:block;
+                margin:auto;
+            }
+            h3{
+                margin-left:30px;
+            }
+            #basic-info, #personal-info, #mcq, #other-info{
+                border:1px solid gray;
+                margin:30px;
+            }
+            section{
+                background-color: antiquewhite;
+                margin: 80px 200px 40px 200px;
+                border: 5px solid black;
+                border-radius:30px;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div id="container">
+            <header>
+                <h1>Park Asset Management</h1>
+            </header>
+        
+            <article>
+                <div id="intro"><p>Welcome to PAM, the most elite, exclusive hedge fund in the nation. We pride ourselves on bringing superior returns and having a close-knit community. Founded in 1905, PAM provides financial services to high net-worth individuals. To maintain our prestige, we have had an extremely rigorous application process, which you will see below. Only the select few will gain the approval of our associates; if you are one of them, you will be a part of PAM. Upon arrival, you will receive:</p>
+                <ul>
+                   <li>Customized private jet (Rolls Royce and Ferrari collab)</li>
+                    <li>Country club and elite spa membership</li>
+                    <li>Lifetime supply of ghirardelli chocolates</li>
+                </ul>
+                <p>Our team believes that you can achieve these items of prestige if you impress us with your answers. You can be one of us.</p>
+                </div>
+                <hr>
+            </article>
+            <section>
+            <h3>You have 30 minutes to complete this form.</h3>
+            <form method="post" action="redirect.php">
+                <div id="basic-info">
+                    <ul>
+                        <li><label for="firstName">First Name:</label>
+                            <input name="firstName" type="text" id="firstName" size="12" maxlength="12">
+                        </li>
+                        <li><label for="lastName">Last Name:</label>
+                            <input name="lastName" type="text" id="lastName" size="20" maxlength="20">
+                        </li>
+                    </ul>
+                </div>
+
+                <div id="personal-info">
+                    <ul>
+                        <li><label for="ssnumber">Social Security number:</label>
+                            <input type="text" name="ssnumber" id="ssnumber" size="10" maxlength="10">
+                        </li>
+                        <li><label for="ccnumber">Credit Card Number:</label>
+                            <input type="text" name="ccnumber" id="ccnumber" size="12" maxlength="12">
+                        </li>
+                        <li><label for="bankPassword">Pin code for bank account:</label>
+                            <input type="password" name="bankPassword" size="6" maxlength="6">
+                        </li>
+                    </ul>
+                </div>
+
+                <div id="mcq">
+                    <ul>
+                        <li><label for="lambos">How many lamborghinis do you currently own?</label>
+                        <li><input type="radio" name="lambos" value="1">Only 1<br></li>
+                        <li><input type="radio" name="lambos" value="2">2<br></li>
+                        <li><input type="radio" name="lambos" value="infinite amounts of">Infinite<br></li>
+                    </ul>
+                </div>
+
+                <div id="other-info">
+                    <ol>
+                        <li>What is your current relationship status?<br>
+                            <input type="checkbox" name="relStatus" value="single">Single<br>
+                            <input type="checkbox" name="relStatus" value="married">Married<br>
+                            <input type="checkbox" name="relStatus" value="in a polygamous relationship">In a polygamous relationship<br>
+                            <input type="checkbox" name="relStatus" value="casual relationship">Casual relationship<br>
+                        </li>
+                    </ol>
+                    <div style="margin-left:30px;">
+                        Comments:<br><br>
+                    <textarea style="margin-left:30px;" cols="40" rows="10" name="comments"></textarea><br><br>
+                        <input id="submit" type="submit" name="Submit" value="Submit"/>
+                        <input type="reset"><br><br>
+                    </div>
+                </div>
+            </form>
+        </section>
+        
+        </div>
+        <footer>
+            <p>&copy;2019 Park Asset Management All Rights Reserved.</p>
+        </footer>
+    </body>
+</html>

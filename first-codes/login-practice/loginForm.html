@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        <style>
+            header, article{
+                width:500px;
+                margin:auto;
+            }
+            header{
+                text-align:center;
+                margin-top:150px;
+            }
+            article{
+                background-color:floralwhite;
+                padding:20px;
+                border:1px solid black;
+            }
+        </style>
+    </head>
+    <body style="background-color: antiquewhite;">
+        <header><h4>Enter Credentials: </h4></header>
+        <article>
+            <form method="POST" action="login.php">
+                <p>Username: <input type="text" name="username"></p>
+                <p>Password: <input type="password" name="password"></p>
+                <input type="submit">
+            </form>
+        </article>
+    </body>
+</html>
